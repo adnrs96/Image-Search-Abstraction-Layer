@@ -61,7 +61,16 @@ app.get('/api/latest/imagesearch/',function(req,res){
     else
     {
       var recent_search = db.collection('recent_search');
-      
+      recent_search.find().sort({_id:-1}).limit(10).toArray(function(err,doc){
+        if(err)
+        console.log(err);
+        else
+        {
+          console.log(doc);
+          res.json(doc);
+          db.close();
+        }
+      });
     }
   });
 });
