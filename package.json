@@ -1,0 +1,24 @@
+{
+  "name": "image-search-abstraction-layer",
+  "version": "1.0.0",
+  "description": "This is an excercise done as a part of fcc curiculum ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express":"4.13.4",
+    "bing.search":"1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adnrs96/Image-Search-Abstraction-Layer.git"
+  },
+  "author": "Aditya Bansal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adnrs96/Image-Search-Abstraction-Layer/issues"
+  },
+  "homepage": "https://github.com/adnrs96/Image-Search-Abstraction-Layer#readme"
+}
