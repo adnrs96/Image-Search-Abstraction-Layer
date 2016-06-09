@@ -3,7 +3,7 @@ var MongoClient = require('mongodb').MongoClient;
 var app = express();
 var ts = require('unix-timestamp');
 var Search = require('bing.search');
-var search = new Search('UPQQGrnCOJZiGxfJ1whHXFB8CNTS1IgS0QIYbnd1Bfk');
+var search = new Search(process.env.BINGSRCH_APIKEY);
 var url = process.env.MONGOLAB_URI;
 app.set('port',process.env.PORT || 5000);
 app.get('/api/imagesearch/:data',function(req,res){
