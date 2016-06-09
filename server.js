@@ -4,7 +4,7 @@ var app = express();
 var ts = require('unix-timestamp');
 var Search = require('bing.search');
 var search = new Search('UPQQGrnCOJZiGxfJ1whHXFB8CNTS1IgS0QIYbnd1Bfk');
-var url = 'mongodb://localhost:27018/search_records';
+var url = process.env.MONGOLAB_URI;
 app.set('port',process.env.port || 5000);
 app.get('/api/imagesearch/:data',function(req,res){
   var query_string = req.params.data;
