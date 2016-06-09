@@ -10,7 +10,6 @@
   "dependencies": {
     "express":"4.13.4",
     "bing.search":"1.0.1",
-    "unix-timestamp":"0.2.0",
     "mongodb":"2.1.18"
   },
   "repository": {

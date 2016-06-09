@@ -1,7 +1,6 @@
 var express = require('express');
 var MongoClient = require('mongodb').MongoClient;
 var app = express();
-var ts = require('unix-timestamp');
 var Search = require('bing.search');
 var search = new Search(process.env.BINGSRCH_APIKEY);
 var url = process.env.MONGOLAB_URI;
