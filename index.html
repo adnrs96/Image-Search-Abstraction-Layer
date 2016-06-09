@@ -17,20 +17,16 @@
 				<li>I can get a list of the most recently submitted search strings.</li>
 			</ul>
 		</blockquote>
-	<h3>Example creation usage:</h3>
-	<code>http://urlshortener-ms.herokuapp.com/new/https://www.google.com</code>
+	<h3>Example Search :</h3>
+	<code>http://image-srch-abstraction-layer.herokuapp.com/api/imagesearch/taylor%20swift?offset=2</code>
 	<br/>
-	<code>http://urlshortener-ms.herokuapp.com/new/http://foo.com:80</code>
 	<h3>Example creation output</h3>
-	<code>	{
-  			"original_url":"http://foo.com:80",
-  			"short_url":"http://urlshortener-ms.herokuapp.com/3"
-			}
-	</code>
-<h3>Usage:</h3>
-<code>http://urlshortener-ms.herokuapp.com/1</code>
-<h3>Will redirect to:</h3>
-<code>https://www.google.com/</code>
+	<code>[{"url":"http://wallpaperfast.com/wp-content/uploads/2013/06/Taylor-Swift-2013-wallpaper.jpg","snippet":"Taylor Swift 2013 wallpaper in high resolution for free. Get Taylor ...","thumbnail":"http://ts1.mm.bing.net/th?id=OIP.M41e25b502f4cf48cc2d84929d3e75592H0&pid=15.1","context":"http://wallpaperfast.com/taylor-swift-2013-wallpaper.html"},{"url":"http://wallpaperfast.com/wp-content/uploads/2013/06/Taylor-Swift-2013-wallpaper.jpg","snippet":"Taylor Swift 2013 wallpaper in high resolution for free. Get Taylor ...","thumbnail":"http://ts1.mm.bing.net/th?id=OIP.M41e25b502f4cf48cc2d84929d3e75592H0&pid=15.1","context":"http://wallpaperfast.com/taylor-swift-2013-wallpaper.html"}]</code>
+	<h3>Example Recent search  :</h3>
+	<code>http://image-srch-abstraction-layer.herokuapp.com/api/latest/imagesearch/</code>
+	<br/>
+	<h3>Example creation output</h3>
+	<code>[{"_id":"5759b92dd41dac1100217bbf","term":"taylor swift","when":"2016-06-09T18:45:00.944Z"},{"_id":"5759b87ad41dac1100217bbe","term":"taylor swift","when":"2016-06-09T18:42:01.546Z"},{"_id":"5759b857d41dac1100217bbd","term":"cats lol","when":"2016-06-09T18:41:26.696Z"},{"_id":"5759b6af3a020a11001d1336","term":"cats lol","when":"2016-06-09T18:34:22.348Z"},{"_id":"5759b6a93a020a11001d1335","term":"cats lol","when":"2016-06-09T18:34:16.364Z"},{"_id":"5759b6a73a020a11001d1334","term":"cats lol","when":"2016-06-09T18:34:14.235Z"},{"_id":"5759b42c2e4d410b164077b1","term":"Computer funny","when":"2016-06-09T18:23:35.654Z"}]</code>
 </div>
 </body>
 </html>
